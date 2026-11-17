@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Đăng ký tham gia mạng lưới cơ sở hỗ trợ y tế SafeKid tại TP. Hồ Chí Minh.">
+  <title>Tham gia mạng lưới hỗ trợ | SafeKid</title>
+  <link rel="stylesheet" href="Styles/main.css">
+  <script defer src="Scripts/products.js"></script><script defer src="Scripts/guides.js"></script><script defer src="Scripts/hospitals.js"></script><script defer src="Scripts/app.js"></script>
+</head>
+<body data-page="campaign">
+  <header id="siteHeader"></header>
+  <main>
+    <section class="page-title"><div class="container"><p class="eyebrow">MẠNG LƯỚI HỖ TRỢ TP. HỒ CHÍ MINH</p><h1>Cùng kết nối để hỗ trợ kịp thời</h1><p>Dành cho bệnh viện, phòng khám và cơ sở y tế muốn công khai đầu mối liên hệ chính thức.</p></div></section>
+    <div class="container breadcrumb"><a href="index.html">Trang chủ</a> &nbsp;›&nbsp; <a href="emergency.html">Cấp cứu</a> &nbsp;›&nbsp; Tham gia mạng lưới</div>
+    <section class="container campaign-intro">
+      <div class="campaign-callout">
+        <div><p class="eyebrow">ĐANG CÓ TÌNH HUỐNG KHẨN CẤP?</p><h2>Gọi 115 trước; đừng chờ đăng ký hay tìm trên trang.</h2><p>SafeKid không phải hệ thống điều phối cấp cứu. Các số trên trang là tổng đài công khai của bệnh viện, không bảo đảm có thể tiếp nhận hoặc điều xe cấp cứu.</p></div>
+        <a class="call-115" href="tel:115">☎ &nbsp; GỌI 115</a>
+      </div>
+      <div class="campaign-grid">
+        <section class="campaign-form-card">
+          <p class="eyebrow">ĐĂNG KÝ ĐẦU MỐI CƠ SỞ</p><h2>Đề xuất thông tin liên hệ</h2>
+          <p class="fine-print">Chỉ đăng ký số tổng đài/cơ sở được đơn vị cho phép công khai, không đăng số cá nhân của bác sĩ nếu chưa có sự đồng ý rõ ràng.</p>
+          <div class="campaign-warning" role="note">Đây là bản demo tĩnh: thông tin dưới đây chỉ lưu trong trình duyệt/thiết bị hiện tại. Chưa gửi tới SafeKid, chưa được xác minh và sẽ không xuất hiện trong kết quả GPS của người khác. Cần backend, người kiểm duyệt và quy trình cập nhật trước khi vận hành thật.</div>
+          <div class="success-message" data-provider-notice hidden aria-live="polite"></div>
+          <form data-provider-form>
+            <div class="form-grid">
+              <div class="form-field full"><label for="providerOrganization">Tên bệnh viện / phòng khám / cơ sở *</label><input id="providerOrganization" name="organization" required maxlength="120" autocomplete="organization"></div>
+              <div class="form-field"><label for="providerContact">Người đại diện *</label><input id="providerContact" name="contactName" required maxlength="80" autocomplete="name"></div>
+              <div class="form-field"><label for="providerRole">Vai trò *</label><select id="providerRole" name="role" required><option value="">Chọn vai trò</option><option>Đại diện cơ sở</option><option>Bác sĩ</option><option>Điều dưỡng / nhân viên y tế</option><option>Nhân sự truyền thông / hành chính</option></select></div>
+              <div class="form-field"><label for="providerPhone">Số tổng đài / số cơ sở *</label><input id="providerPhone" name="phone" type="tel" inputmode="tel" pattern="[0-9+\(\) .-]{8,20}" required aria-describedby="providerPhoneHint"><small id="providerPhoneHint" class="fine-print">Sẽ chỉ công khai sau khi SafeKid xác minh và được đơn vị cho phép.</small></div>
+              <div class="form-field"><label for="providerDistrict">Quận / huyện tại TP. Hồ Chí Minh *</label><select id="providerDistrict" name="district" required><option value="">Chọn khu vực</option><option>Quận 1</option><option>Quận 3</option><option>Quận 5</option><option>Quận 10</option><option>Bình Thạnh</option><option>Tân Bình</option><option>Phú Nhuận</option><option>Thành phố Thủ Đức</option><option>Khu vực khác tại TP. Hồ Chí Minh</option></select></div>
+              <div class="form-field full"><label for="providerAvailability">Thời gian tiếp nhận / ghi chú *</label><input id="providerAvailability" name="availability" required maxlength="160" placeholder="Ví dụ: Tổng đài cơ sở; giờ hoạt động ghi theo đơn vị"></div>
+            </div>
+            <label class="consent-check"><input type="checkbox" name="consent" required><span>Tôi được đơn vị cho phép gửi đề xuất và xác nhận đây là đầu mối liên hệ có thể công khai sau khi xác minh. *</span></label>
+            <button class="button button-primary" type="submit">LƯU BẢN ĐĂNG KÝ DEMO</button>
+          </form>
+        </section>
+        <aside class="campaign-aside">
+          <h2>Cách mạng lưới cần hoạt động</h2>
+          <ol class="campaign-steps"><li><strong>Cơ sở gửi đầu mối chính thức</strong><span>Dùng tổng đài hoặc số cơ sở được cho phép công khai.</span></li><li><strong>SafeKid xác minh</strong><span>Đối chiếu với đại diện cơ sở và xác nhận khả năng tiếp nhận cuộc gọi.</span></li><li><strong>Cập nhật danh bạ có kiểm duyệt</strong><span>Chỉ thông tin đã duyệt mới có thể hiện khi người dùng chia sẻ vị trí.</span></li></ol>
+          <div class="alert-box alert-blue"><h3>Phạm vi bản thực hành</h3><p>Không có máy chủ, không nhận đăng ký từ người dùng khác, không xác minh cơ sở và không điều phối nhân viên y tế. Các mục bên dưới chỉ là bản nháp cục bộ trên máy bạn.</p></div>
+          <h2>Bản đăng ký trên thiết bị này</h2><div class="provider-drafts" data-provider-drafts></div>
+        </aside>
+      </div>
+    </section>
+  </main>
+  <div id="siteFooter"></div><a class="emergency-fab" href="tel:115" aria-label="Gọi cấp cứu 115">✚ &nbsp; GỌI 115</a>
+</body>
+</html>

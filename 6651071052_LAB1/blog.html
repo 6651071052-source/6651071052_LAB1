@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Thư viện hướng dẫn sơ cứu theo tình huống của SafeKid.">
+  <title>Hướng dẫn sơ cứu | SafeKid</title><link rel="stylesheet" href="Styles/main.css">
+  <script defer src="Scripts/products.js"></script><script defer src="Scripts/guides.js"></script><script defer src="Scripts/hospitals.js"></script><script defer src="Scripts/app.js"></script>
+</head>
+<body data-page="blog">
+  <header id="siteHeader"></header>
+  <main>
+    <section class="page-title"><div class="container"><h1>Hướng dẫn sơ cứu</h1><p>Tra cứu nhanh các bước cơ bản theo tình huống thường gặp</p></div></section>
+    <div class="container breadcrumb"><a href="index.html">Trang chủ</a> &nbsp;›&nbsp; Hướng dẫn sơ cứu</div>
+    <div class="container blog-layout">
+      <aside class="blog-sidebar">
+        <h2>Tìm hướng dẫn</h2><div class="form-field"><label for="guideSearch">Từ khóa</label><input id="guideSearch" data-guide-search type="search" placeholder="Ví dụ: bỏng, trẻ em"></div>
+        <h2>Danh mục tình huống</h2>
+        <a class="blog-category-count" href="blog.html?category=Bỏng"><span>Bỏng</span><span>01</span></a>
+        <a class="blog-category-count" href="blog.html?category=Hóc%20dị%20vật"><span>Hóc dị vật</span><span>01</span></a>
+        <a class="blog-category-count" href="blog.html?category=Chảy%20máu"><span>Chảy máu</span><span>01</span></a>
+        <a class="blog-category-count" href="blog.html?category=Đuối%20nước"><span>Đuối nước</span><span>01</span></a>
+        <a class="blog-category-count" href="blog.html?category=Sốt,%20co%20giật"><span>Sốt, co giật</span><span>01</span></a>
+        <a class="blog-category-count" href="blog.html?category=Ngộ%20độc"><span>Ngộ độc</span><span>01</span></a>
+        <a class="blog-category-count" href="blog.html?category=Chấn%20thương"><span>Chấn thương</span><span>01</span></a>
+        <a class="blog-category-count" href="blog.html?category=Côn%20trùng%20đốt"><span>Côn trùng đốt</span><span>01</span></a>
+        <h2>Hướng dẫn mới nhất</h2>
+        <a class="blog-category-count" href="blog-details.html?id=burn"><span>Sơ cứu khi bị bỏng</span><span>→</span></a>
+        <a class="blog-category-count" href="blog-details.html?id=choking"><span>Sơ cứu khi hóc dị vật</span><span>→</span></a>
+        <h2>Chủ đề</h2>
+        <div class="filter-tabs"><a class="button button-outline" href="blog.html?age=1-5%20tuổi">Trẻ em</a><a class="button button-outline" href="blog.html?category=Bỏng">Bỏng</a><a class="button button-outline" href="blog.html?category=Chấn%20thương">Chấn thương</a></div>
+        <h2>Ghi nhớ</h2><p class="fine-print">Nếu nạn nhân nguy kịch, hãy gọi 115 trước. Không trì hoãn cấp cứu để đọc hướng dẫn.</p>
+        <a class="button button-danger" href="tel:115">GỌI 115</a>
+      </aside>
+      <section>
+        <div class="guide-filter-row">
+          <div class="form-field"><label for="guideCategory">Loại sự cố</label><select id="guideCategory" class="filter-select" data-guide-category><option value="">Tất cả tình huống</option><option>Bỏng</option><option>Hóc dị vật</option><option>Chảy máu</option><option>Đuối nước</option><option>Sốt, co giật</option><option>Ngộ độc</option><option>Chấn thương</option><option>Côn trùng đốt</option></select></div>
+          <div class="form-field"><label for="guideAge">Nhóm tuổi</label><select id="guideAge" class="filter-select" data-guide-age><option value="">Tất cả nhóm tuổi</option><option>Trẻ sơ sinh</option><option>1-5 tuổi</option><option>Trên 5 tuổi</option><option>Người lớn</option></select></div>
+        </div>
+        <div class="guide-grid" data-guide-results></div>
+        <nav class="pagination" aria-label="Phân trang"><a class="active" href="#guides">1</a><a href="#guides">2</a><a href="#guides" aria-label="Trang tiếp theo">→</a></nav>
+      </section>
+    </div>
+  </main>
+  <div id="siteFooter"></div><a class="emergency-fab" href="emergency.html" aria-label="Mở trang cấp cứu">✚ &nbsp; CẤP CỨU</a>
+</body>
+</html>

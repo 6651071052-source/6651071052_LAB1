@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Gọi cấp cứu 115 hoặc tìm bệnh viện tham khảo gần vị trí của bạn.">
+  <title>Cấp cứu | SafeKid</title><link rel="stylesheet" href="Styles/main.css">
+  <script defer src="Scripts/products.js"></script><script defer src="Scripts/guides.js"></script><script defer src="Scripts/hospitals.js"></script><script defer src="Scripts/app.js"></script>
+</head>
+<body data-page="emergency">
+  <header id="siteHeader"></header>
+  <main class="container emergency-page">
+    <div class="breadcrumb"><a href="index.html">Trang chủ</a> &nbsp;›&nbsp; Cấp cứu</div>
+    <section class="emergency-intro">
+      <div><p class="eyebrow">NẾU ĐANG CÓ NGUY HIỂM TỨC THỜI</p><h1>Gọi cấp cứu ngay</h1><p>Không trì hoãn cuộc gọi để tìm bệnh viện trên trang này. Làm theo hướng dẫn của tổng đài.</p></div>
+      <a class="call-115" href="tel:115" aria-label="Gọi cấp cứu 115">☎ &nbsp; GỌI 115</a>
+    </section>
+    <section class="gps-panel">
+      <h2>Tìm bệnh viện gần vị trí của bạn</h2>
+      <p data-location-message>Chia sẻ vị trí để sắp xếp các bệnh viện tham khảo gần nhất. Tọa độ trong bản demo cần được kiểm tra lại.</p>
+      <button class="button button-primary" type="button" data-request-location>⌖ DÙNG VỊ TRÍ CỦA TÔI</button>
+      <p class="fine-print" data-gps-status aria-live="polite">Vị trí chỉ được dùng để tính khoảng cách trong trang này.</p>
+      <div class="manual-location" data-manual-location>
+        <div class="form-grid">
+          <div class="form-field"><label for="citySelect">Nếu không dùng được GPS, chọn tỉnh/thành</label><select class="filter-select" id="citySelect" data-city-select><option value="">Chọn tỉnh/thành</option></select></div>
+          <div class="form-field"><label for="districtSelect">Chọn quận/huyện</label><select class="filter-select" id="districtSelect" data-district-select disabled><option value="">Chọn quận/huyện</option></select></div>
+        </div>
+      </div>
+      <div class="hospital-list" data-emergency-results aria-live="polite"></div>
+      <p class="fine-print">Số điện thoại hiển thị là tổng đài công khai được dẫn nguồn từ trang chính thức, không phải số điều phối xe cấp cứu. Khoảng cách GPS là đường chim bay, không phải thời gian di chuyển.</p>
+    </section>
+    <section class="waiting-box">
+      <h2>Trong lúc chờ trợ giúp</h2>
+      <ol><li>Giữ bình tĩnh và làm theo hướng dẫn của tổng đài 115.</li><li>Nói rõ địa chỉ/vị trí, tuổi và tình trạng hiện tại của nạn nhân.</li><li>Nhờ người mở cửa, đón nhân viên y tế và chuẩn bị giấy tờ/thuốc đang dùng nếu có.</li><li>Không tự di chuyển người bị chấn thương nghiêm trọng trừ khi nơi đó còn nguy hiểm.</li></ol>
+      <div class="waiting-links"><a class="text-link" href="blog-details.html?id=bleeding">Chảy máu →</a><a class="text-link" href="blog-details.html?id=choking">Hóc dị vật →</a><a class="text-link" href="blog-details.html?id=drowning">Đuối nước →</a><a class="text-link" href="blog.html">Thư viện sơ cứu →</a></div>
+    </section>
+    <section class="campaign-cta">
+      <div><p class="eyebrow">MẠNG LƯỚI HỖ TRỢ TP. HỒ CHÍ MINH</p><h2>Bệnh viện / cơ sở y tế muốn cập nhật tổng đài?</h2><p>Đề xuất đầu mối liên hệ chính thức để SafeKid xem xét xác minh. Bản đăng ký hiện tại chỉ là demo trên thiết bị này.</p></div>
+      <a class="button button-outline" href="campaign.html">TÌM HIỂU / ĐĂNG KÝ CƠ SỞ</a>
+    </section>
+    <p class="emergency-disclaimer">Tính năng hỗ trợ tìm bệnh viện gần nhất, không thay thế dịch vụ cấp cứu chính thức. Danh sách, địa chỉ và tọa độ chỉ là dữ liệu mẫu; hãy xác minh từ nguồn chính thức trước khi sử dụng.</p>
+  </main>
+  <div id="siteFooter"></div><a class="emergency-fab" href="tel:115" aria-label="Gọi cấp cứu 115">✚ &nbsp; GỌI 115</a>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Khám phá bộ sơ cứu, băng gạc và vật tư y tế gia đình SafeKid.">
+  <title>Cửa hàng | SafeKid</title><link rel="stylesheet" href="Styles/main.css">
+  <script defer src="Scripts/products.js"></script><script defer src="Scripts/guides.js"></script><script defer src="Scripts/hospitals.js"></script><script defer src="Scripts/app.js"></script>
+</head>
+<body data-page="shop">
+  <header id="siteHeader"></header>
+  <main>
+    <section class="page-title"><div class="container"><h1>Cửa hàng</h1><p>Vật tư sơ cứu gia đình được sắp xếp theo nhu cầu</p></div></section>
+    <div class="container breadcrumb"><a href="index.html">Trang chủ</a> &nbsp;›&nbsp; Cửa hàng</div>
+    <div class="container shop-layout">
+      <aside class="shop-sidebar">
+        <section class="sidebar-section"><h2>Danh mục</h2><div class="category-list">
+          <button data-category-link="all">Tất cả <span>24</span></button><button data-category-link="family">Bộ sơ cứu gia đình</button><button data-category-link="kids">Sơ cứu trẻ em</button><button data-category-link="bandage">Băng gạc y tế</button><button data-category-link="monitor">Nhiệt kế &amp; máy đo</button><button data-category-link="bleeding">Dụng cụ cầm máu</button><button data-category-link="car">Sơ cứu xe hơi</button><button data-category-link="antiseptic">Thuốc sát khuẩn</button><button data-category-link="support">Dụng cụ cố định</button>
+        </div></section>
+        <section class="sidebar-section"><h2>Lọc theo giá</h2><div class="filter-range">
+          <label for="minPrice">Giá tối thiểu</label><input id="minPrice" type="range" min="0" max="500000" step="10000" value="0">
+          <label for="maxPrice">Giá tối đa</label><input id="maxPrice" type="range" min="100000" max="500000" step="10000" value="500000">
+          <div class="range-labels"><span data-min-label>0đ</span><span data-max-label>500.000đ</span></div>
+        </div></section>
+        <section class="sidebar-section"><h2>Độ tuổi phù hợp</h2><select class="filter-select" data-filter-age><option value="">Tất cả độ tuổi</option><option>Trẻ sơ sinh</option><option>1-5 tuổi</option><option>Trên 5 tuổi</option><option>Người lớn</option><option>Mọi lứa tuổi</option></select></section>
+        <section class="sidebar-section latest-products-sidebar"><h2>Sản phẩm nổi bật</h2><a class="latest-item" href="shop-details.html?id=kit-family"><img data-product-image="kit-family" src="Images/placeholder.svg" alt=""><span><strong>Túi sơ cứu gia đình</strong><small>289.000đ</small></span></a><a class="latest-item" href="shop-details.html?id=thermometer"><img data-product-image="thermometer" src="Images/placeholder.svg" alt=""><span><strong>Nhiệt kế điện tử</strong><small>129.000đ</small></span></a></section>
+      </aside>
+      <section>
+        <div class="shop-toolbar"><p data-results-label>Đang tải sản phẩm…</p><label class="sort-wrap">Sắp xếp <select class="sort-select" data-sort><option value="popular">Phù hợp nhất</option><option value="price-low">Giá tăng dần</option><option value="price-high">Giá giảm dần</option><option value="name">Tên sản phẩm</option></select></label></div>
+        <div class="product-grid" data-shop-results></div>
+        <nav class="pagination" aria-label="Phân trang"><a class="active" href="#products">1</a><a href="#products">2</a><a href="#products" aria-label="Trang tiếp theo">→</a></nav>
+      </section>
+    </div>
+  </main>
+  <div id="siteFooter"></div><a class="emergency-fab" href="emergency.html" aria-label="Mở trang cấp cứu">✚ &nbsp; CẤP CỨU</a>
+</body>
+</html>
